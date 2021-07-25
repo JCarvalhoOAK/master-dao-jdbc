@@ -82,7 +82,7 @@ public class DepartamentoDaoJDBC implements DepartamentoDao {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
-				"INSERT INTO department " +
+				"INSERT INTO departamento " +
 				"(Name) " +
 				"VALUES " +
 				"(?)", 
@@ -116,7 +116,7 @@ public class DepartamentoDaoJDBC implements DepartamentoDao {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
-				"UPDATE department " +
+				"UPDATE departamento " +
 				"SET Name = ? " +
 				"WHERE Id = ?");
 
@@ -138,7 +138,7 @@ public class DepartamentoDaoJDBC implements DepartamentoDao {
 		PreparedStatement st = null;
 		try {
 			st = conn.prepareStatement(
-				"DELETE FROM department WHERE Id = ?");
+				"DELETE FROM departamento WHERE Id = ?");
 
 			st.setInt(1, id);
 

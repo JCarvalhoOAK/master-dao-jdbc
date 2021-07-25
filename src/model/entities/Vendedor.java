@@ -99,6 +99,11 @@ public class Vendedor implements Serializable{
 		return "Vendedor [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate
 				+ ", baseSalary=" + baseSalary + ", department=" + department + "]";
 	}
+
+	public void setDepartamento(Departamento dep) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 
