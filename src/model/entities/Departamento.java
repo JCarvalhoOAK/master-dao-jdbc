@@ -9,7 +9,7 @@ import java.util.Objects;
    * Attributes
    * Constructors
    * Getters/Setters
-   * hashCode and equals
+   * hashCode and equals (APENAS o ID)
    * toString
    * implements Serializable
  */
@@ -46,7 +46,7 @@ public class Departamento implements Serializable {
 		public void setName(String name) {
 			this.name = name;
 		}
-
+		//aqui só o ID:
 		@Override
 		public int hashCode() {
 			return Objects.hash(id);
