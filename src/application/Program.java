@@ -1,9 +1,12 @@
 package application;
 
+import java.util.List;
+
 //import java.util.Date;
 
 import model.dao.DaoFactory;
 import model.dao.VendedorDao;
+import model.entities.Departamento;
 //import model.entities.Departamento;
 import model.entities.Vendedor;
 
@@ -20,8 +23,15 @@ public class Program {
 		VendedorDao vendedorDao = DaoFactory.createVendedorDao();
 		
 		Vendedor vendedor = vendedorDao.findById(7);
-		
 		//System.out.println(obj);
 		System.out.println(vendedor);
+		
+		System.out.println("\n=== TESTE 2: Vendedor findByDepartment ===");
+		Departamento departamento = new Departamento(4, null);
+		List<Vendedor> list = vendedorDao.findByDepartamento(departamento);
+		for (Vendedor obj : list) {
+			System.out.println(obj);
+		}
+		
 			}
 }	
