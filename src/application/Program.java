@@ -15,6 +15,8 @@ public class Program {
 		
 		//Vendedor vendedor = new Vendedor(21, "Bob", "bob@gmail.com", new Date(), 3000.0 , obj );
 		
+		
+		System.out.println("=== TESTE 1: Vendedor findByid ===");
 		VendedorDao vendedorDao = DaoFactory.createVendedorDao();
 		
 		Vendedor vendedor = vendedorDao.findById(7);
